@@ -136,6 +136,12 @@
   border-color: rgba(56, 189, 248, 0.45);
 }
 
+.socials {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 980px) {
   .nav { display: none; }
   .hero__inner { grid-template-columns: 1fr; }

@@ -6,10 +6,13 @@
     </p>
 
     <div class="grid grid-3 skills-grid">
-      <div class="card" *ngFor="let group of skillGroups">
+      <div class="card skill-group" *ngFor="let group of skillGroups">
         <h3>{{ group.title }}</h3>
-        <div class="chips">
-          <span class="chip chip--skill" *ngFor="let item of group.items; trackBy: trackByFn">{{ item }}</span>
+        <div class="skill-tiles">
+          <div class="skill-tile" *ngFor="let item of group.items; trackBy: trackByFn">
+            <img class="skill-tile__icon" [src]="item.icon" [alt]="item.label" loading="lazy" />
+            <div class="skill-tile__label">{{ item.label }}</div>
+          </div>
         </div>
       </div>
     </div>
