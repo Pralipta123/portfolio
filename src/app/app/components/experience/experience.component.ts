@@ -24,7 +24,7 @@ export class ExperienceComponent {
         'Boosted performance by ~30% using lazy loading, code splitting, and refined change detection strategies.',
         'Strengthened security by ~60% implementing RBAC with JWT-based authentication and role-level access control.'
       ],
-      tech: ['Angular', 'TypeScript', 'RxJS', 'JWT', 'RBAC', 'REST APIs']
+      tech: ['Angular','NodeJS.' , 'TypeScript', 'RxJS', 'JWT', 'RBAC', 'REST APIs', 'State management']
     },
     {
       company: 'AGI Brains Private Ltd.',
@@ -35,7 +35,7 @@ export class ExperienceComponent {
         'Reduced load time by ~35% via modular architecture, lazy loading, and efficient rendering strategies.',
         'Enabled multilingual support (i18n) and added WCAG-compliant accessibility improvements.'
       ],
-      tech: ['Angular', 'TypeScript', 'i18n', 'WCAG', 'REST APIs']
+      tech: ['Angular', 'Java', 'RxJs', 'TypeScript', 'i18n', 'WCAG', 'REST APIs']
     },
     {
       company: 'Web Wheel Technologies',
