@@ -1,0 +1,37 @@
+.timeline {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.timeline__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.timeline__period {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.timeline__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.timeline__list {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  line-height: 1.75;
+  color: rgba(226, 232, 240, 0.88);
+}
+.timeline__list li { margin: 8px 0; }
+
+@media (max-width: 720px) {
+  .timeline__header { flex-direction: column; }
+  .timeline__tech { justify-content: flex-start; }
+}

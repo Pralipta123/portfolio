@@ -1,0 +1,54 @@
+.contact-grid {
+  margin-top: 18px;
+}
+
+.contact-note {
+  margin: 10px 0 0;
+  line-height: 1.7;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.contact-lines {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.contact-line {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.02);
+}
+
+.contact-line:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.contact-line__label {
+  color: rgba(148, 163, 184, 0.95);
+  font-size: 13px;
+}
+
+.contact-line__value {
+  color: rgba(226, 232, 240, 0.92);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.footer {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+}

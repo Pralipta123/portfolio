@@ -1,0 +1,26 @@
+<section id="experience" class="section">
+  <div class="container fade-in">
+    <h2>Experience</h2>
+    <p class="lead">
+      I’ve worked on enterprise and product-facing Angular applications—shipping features end-to-end, improving reliability, and scaling UI architecture.
+    </p>
+
+    <div class="timeline">
+      <article class="timeline__item card" *ngFor="let item of experience; trackBy: trackByCompany">
+        <div class="timeline__header">
+          <div>
+            <h3>{{ item.role }} · {{ item.company }}</h3>
+            <div class="muted timeline__period">{{ item.period }}</div>
+          </div>
+          <div class="timeline__tech">
+            <span class="chip" *ngFor="let t of item.tech">{{ t }}</span>
+          </div>
+        </div>
+
+        <ul class="timeline__list">
+          <li *ngFor="let h of item.highlights">{{ h }}</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
