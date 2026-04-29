@@ -4,34 +4,55 @@
   margin-top: 18px;
 }
 
-.timeline__header {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  align-items: flex-start;
+.timeline__meta {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.timeline__role {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.timeline__company {
+  margin: 8px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(226, 232, 240, 0.82);
 }
 
 .timeline__period {
-  margin-top: 6px;
+  margin: 8px 0 0;
   font-size: 14px;
+}
+
+.timeline__stack {
+  margin-top: 14px;
+}
+
+.timeline__stack-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(148, 163, 184, 0.95);
 }
 
 .timeline__tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-end;
+  gap: 8px;
 }
 
 .timeline__list {
-  margin: 14px 0 0;
+  margin: 16px 0 0;
   padding-left: 18px;
   line-height: 1.75;
   color: rgba(226, 232, 240, 0.88);
 }
 .timeline__list li { margin: 8px 0; }
-
-@media (max-width: 720px) {
-  .timeline__header { flex-direction: column; }
-  .timeline__tech { justify-content: flex-start; }
-}

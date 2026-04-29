@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { SkillsComponent } from './app/components/skills/skills.component';
 import { ExperienceComponent } from './app/components/experience/experience.component';
 import { ProjectsComponent } from './app/components/projects/projects.component';
 import { ContactComponent } from './app/components/contact/contact.component';
+import { FooterComponent } from './app/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +22,12 @@ import { ContactComponent } from './app/components/contact/contact.component';
     SkillsComponent,
     ExperienceComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],

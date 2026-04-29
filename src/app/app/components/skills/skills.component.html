@@ -5,8 +5,8 @@
       A practical stack focused on building maintainable Angular apps—clean UI components, predictable state, and secure API integration.
     </p>
 
-    <div class="grid grid-3 skills-grid">
-      <div class="card skill-group" *ngFor="let group of skillGroups">
+    <div class="grid grid-2 skills-grid">
+      <div class="card skill-group" *ngFor="let group of skillGroups; trackBy: trackGroup">
         <h3>{{ group.title }}</h3>
         <div class="skill-tiles">
           <div class="skill-tile" *ngFor="let item of group.items; trackBy: trackByFn">

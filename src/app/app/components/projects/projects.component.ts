@@ -16,24 +16,24 @@ export class ProjectsComponent {
   }> = [
     {
       title: 'B2B Packaging Marketplace',
-      subtitle: 'B2B marketplace platform with RBAC and role-based dashboards.',
+      subtitle: 'Angular SPA on a Node.js REST stack with RBAC and role-specific dashboards.',
       bullets: [
-        'Architected multi-tenant platform supporting RBAC and role-based dashboards for 1,000+ concurrent users.',
-        'Engineered end-to-end order lifecycle, reducing order processing errors by ~20% via automated workflows.',
-        'Optimized performance and scalability by ~25–30% using RxJS for reactive data handling and modular architecture.'
+        'Multi-role B2B UI (Admin, Vendor, Buyer) with RBAC-aware navigation and dashboards backed by Node.js APIs.',
+        'Order lifecycle screens wired to REST contracts, with validation, optimistic feedback, and fewer manual correction loops.',
+        'RxJS-driven state and modular Angular structure for cart, catalog, and order flows under real usage.'
       ],
-      tags: ['Angular', 'TypeScript', 'RxJS', 'RBAC', 'JWT', 'REST APIs'],
+      tags: ['Angular', 'TypeScript', 'Node.js', 'RxJS', 'RBAC', 'JWT', 'REST APIs'],
       link: 'https://pactap.com/'
     },
     {
       title: 'JSF → Angular Migration',
-      subtitle: 'Enterprise migration system for a Qatar-based eCustoms platform.',
+      subtitle: '6-module Angular front end for a Qatar eCustoms platform (Java REST services).',
       bullets: [
-        'Migrated 6+ legacy JSF modules to Angular, enabling ~40% faster feature development across modules.',
-        'Designed 20+ reusable components standardizing UI patterns and reducing redundant code by ~30%.',
-        'Improved bilingual support (English & Arabic), increasing engagement by ~25% across international user groups.'
+        'Replaced six JSF modules with Angular and 20+ shared components so new screens reused patterns instead of one-off JSP.',
+        'Feature modules and lazy loading to keep the SPA maintainable as scope grew across customs workflows.',
+        'English / Arabic i18n, RTL-aware layout, and WCAG-oriented patterns for international operators.'
       ],
-      tags: ['Angular', 'TypeScript', 'i18n', 'WCAG', 'Migration', 'REST APIs'],
+      tags: ['Angular', 'TypeScript', 'Java', 'i18n', 'WCAG', 'Migration', 'REST APIs'],
       link: 'https://www.ecustoms.gov.qa/qccswui/#/home'
     }
   ];

@@ -61,4 +61,8 @@ export class SkillsComponent {
   trackByFn(index: number, item: { label: string }) {
     return item.label;
   }
+
+  trackGroup(index: number, group: { title: string }) {
+    return group.title;
+  }
 }
