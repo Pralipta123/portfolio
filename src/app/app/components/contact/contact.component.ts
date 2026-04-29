@@ -9,6 +9,9 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class ContactComponent {
   private readonly fb = inject(FormBuilder);
 
+  /** Served from `src/assets/` → use `assets/…` in the template. */
+  readonly contactAsideImageUrl = 'assets/pexels-pixabay-221043.jpg';
+
   submitted = false;
 
   readonly contactForm = this.fb.nonNullable.group({

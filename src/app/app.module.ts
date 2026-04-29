@@ -12,6 +12,7 @@ import { ExperienceComponent } from './app/components/experience/experience.comp
 import { ProjectsComponent } from './app/components/projects/projects.component';
 import { ContactComponent } from './app/components/contact/contact.component';
 import { FooterComponent } from './app/components/footer/footer.component';
+import { ScrollRevealDirective } from './directives/scroll-reveal.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './app/components/footer/footer.component';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollRevealDirective
   ],
   imports: [
     BrowserModule,

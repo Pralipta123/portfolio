@@ -58,6 +58,13 @@
   color: rgba(226, 232, 240, 1);
 }
 
+.nav__link--active {
+  color: rgba(232, 237, 245, 1) !important;
+  background: rgba(56, 189, 248, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.12);
+}
+
 .topbar__cta {
   display: flex;
   align-items: center;
@@ -166,6 +173,12 @@
 .mobile-menu__link:hover {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.08);
+}
+
+.mobile-menu__link--active {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #fff;
 }
 
 .mobile-menu__cta {

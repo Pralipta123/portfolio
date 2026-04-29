@@ -17,7 +17,14 @@
     </a>
 
     <nav class="nav nav--desktop" aria-label="Primary">
-      <a class="nav__link" *ngFor="let link of navLinks" [href]="link.href">{{ link.label }}</a>
+      <a
+        class="nav__link"
+        *ngFor="let link of navLinks"
+        [href]="link.href"
+        [class.nav__link--active]="activeSectionId === link.id"
+      >
+        {{ link.label }}
+      </a>
     </nav>
 
     <div class="topbar__cta">
@@ -45,7 +52,15 @@
     <button type="button" class="mobile-menu__scrim" (click)="closeMenu()" aria-label="Close menu"></button>
     <nav id="mobile-nav-panel" class="mobile-menu__panel" aria-label="Primary">
       <div class="mobile-menu__links">
-        <a class="mobile-menu__link" *ngFor="let link of navLinks" [href]="link.href" (click)="closeMenu()">{{ link.label }}</a>
+        <a
+          class="mobile-menu__link"
+          *ngFor="let link of navLinks"
+          [href]="link.href"
+          [class.mobile-menu__link--active]="activeSectionId === link.id"
+          (click)="closeMenu()"
+        >
+          {{ link.label }}
+        </a>
       </div>
       <div class="mobile-menu__cta">
         <a class="btn ghost mobile-menu__btn" href="assets/Pralipta_Swain_Software_Developer.pdf" download (click)="closeMenu()">Resume</a>

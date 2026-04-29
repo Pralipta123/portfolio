@@ -99,15 +99,44 @@
 .git-aside__visual {
   position: relative;
   z-index: 1;
-  margin: -4px 0 4px;
+  margin: -4px 0 8px;
 }
 
-.git-aside__spark {
+.git-aside__figure-wrap {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  background: rgba(6, 10, 18, 0.6);
+}
+
+.git-aside__img {
   width: 100%;
-  max-width: 220px;
   height: auto;
+  max-height: 240px;
   display: block;
-  opacity: 0.95;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+}
+
+/* Blend hero cyan / violet into the photo so it matches the portfolio */
+.git-aside__img-tint {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(145deg, rgba(56, 189, 248, 0.22) 0%, transparent 42%, transparent 58%, rgba(129, 140, 248, 0.18) 100%),
+    linear-gradient(to top, rgba(6, 10, 18, 0.55) 0%, transparent 50%);
+  mix-blend-mode: soft-light;
+}
+
+.git-aside__img-frame {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
 }
 
 .git-aside__eyebrow {
@@ -135,7 +164,7 @@
 .git-aside__list {
   position: relative;
   z-index: 1;
-  margin: 4px 0 0;
+  margin: 4px 0 2px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -163,74 +192,6 @@
   color: var(--brand);
   background: rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(56, 189, 248, 0.22);
-}
-
-.git-aside__tiles-label {
-  position: relative;
-  z-index: 1;
-  margin: 10px 0 0;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(159, 176, 200, 0.88);
-}
-
-.git-aside__tiles {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 2px;
-}
-
-.git-tile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 16px 10px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(232, 237, 245, 0.95);
-  text-decoration: none;
-  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
-}
-
-.git-tile:hover {
-  transform: translateY(-3px);
-  border-color: rgba(56, 189, 248, 0.45);
-  background: rgba(56, 189, 248, 0.1);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-}
-
-.git-tile:focus-visible {
-  outline: 2px solid rgba(56, 189, 248, 0.75);
-  outline-offset: 2px;
-}
-
-.git-tile__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(232, 237, 245, 0.95);
-}
-
-.git-tile__img {
-  width: 26px;
-  height: 26px;
-  display: block;
-}
-
-.git-tile__text {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(203, 213, 225, 0.95);
 }
 
 .git-form {
